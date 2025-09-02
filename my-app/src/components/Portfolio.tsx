@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+
 import { Copy, Mail, Play, Pause, SkipBack, SkipForward, Volume2 } from 'lucide-react';
 import './Portfolio.css';
 
@@ -118,22 +119,20 @@ const Portfolio: React.FC = () => {
                 <div className="about-section">
                     <h2>About</h2>
                     <p>
-                        Originally from Seoul, South Korea, Yullin is a passionate songwriter and performer
-                        currently studying at BIMM. Her music blends contemporary pop sensibilities with
-                        Korean musical influences, creating a unique sound that resonates across cultures.
-                        With a focus on authentic storytelling and emotional connection, Yullin crafts songs
-                        that speak to the universal human experience while maintaining her distinctive artistic voice.
+                        Hi! my name is Yullin, orinially from Seoul, South Korea, I'm a passionate songwriter and performer
+                        currently studying at BIMM. my music tends to be a kind of electro-pop with well crafted lyrics
+                        With a focus on storytelling.
                     </p>
                 </div>
 
                 <div className="social-links">
-                    <a href="https://open.spotify.com/artist/yullin" target="_blank" rel="noopener noreferrer" className="social-btn spotify">
+                    <a href="https://open.spotify.com/artist/1jZid6TJ4dGhJQNwJRZegz?si=L1Zz_tRqSsKR_cq2K0e1PA" target="_blank" rel="noopener noreferrer" className="social-btn spotify">
                         <span>Listen on Spotify</span>
                     </a>
-                    <a href="https://youtube.com/@yullin" target="_blank" rel="noopener noreferrer" className="social-btn youtube">
+                    <a href="https://youtube.com/@yullinyu?si=jLcnvAVM4tAZYJiA" target="_blank" rel="noopener noreferrer" className="social-btn youtube">
                         <span>Watch on YouTube</span>
                     </a>
-                    <a href="https://tiktok.com/@yullin" target="_blank" rel="noopener noreferrer" className="social-btn tiktok">
+                    <a href="https://www.tiktok.com/@yullinseoyeon?_t=ZN-8zOIIMDWN0g&_r=1" target="_blank" rel="noopener noreferrer" className="social-btn tiktok">
                         <span>Follow on TikTok</span>
                     </a>
                 </div>
@@ -164,7 +163,7 @@ const Portfolio: React.FC = () => {
                 <div className="audio-player">
                     <div className="audio-info">
                         <h3>Latest Single</h3>
-                        <p>"Midnight Seoul" - Yullin</p>
+                        <p>"Myself" - Yullin</p>
                     </div>
 
                     <audio ref={audioRef} src="/audio/latest-single.mp3" />
@@ -211,7 +210,7 @@ const Portfolio: React.FC = () => {
                 <div className="video-section">
                     <div className="video-container">
                         <iframe
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            src="https://youtu.be/oS2T4GEraSc"
                             title="Yullin - Latest Music Video"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
