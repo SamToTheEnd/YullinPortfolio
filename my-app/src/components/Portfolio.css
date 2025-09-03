@@ -361,7 +361,7 @@ body::before {
 .right-section {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     animation: slideInRight 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
 }
 
@@ -662,7 +662,6 @@ body::before {
     border-radius: 28px;
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
     .portfolio {
         grid-template-columns: 1fr;
