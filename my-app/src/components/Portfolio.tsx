@@ -13,12 +13,12 @@ const Portfolio: React.FC = () => {
     const audioRef = useRef<HTMLAudioElement>(null);
 
     const images = [
-        '/images/yullin-1.jpg',
-        '/images/yullin-2.jpg',
-        '/images/yullin-3.jpg',
-        '/images/yullin-4.jpg',
-        '/images/yullin-5.jpg',
-        '/images/yullin-6.jpg'
+        `${process.env.PUBLIC_URL}/images/yullin-1.jpg`,
+        `${process.env.PUBLIC_URL}/images/yullin-2.jpg`,
+        `${process.env.PUBLIC_URL}/images/yullin-3.jpg`,
+        `${process.env.PUBLIC_URL}/images/yullin-4.jpg`,
+        `${process.env.PUBLIC_URL}/images/yullin-5.jpg`,
+        `${process.env.PUBLIC_URL}/images/yullin-6.jpg`
     ];
 
     // Auto-advance slideshow
@@ -189,7 +189,7 @@ const Portfolio: React.FC = () => {
                         </div>
                     </div>
 
-                    <audio ref={audioRef} src="/audio/latest-single.mp3" />
+                   <audio ref={audioRef} src={`${process.env.PUBLIC_URL}/audio/latest-single.mp3`} />
 
                     <div className="compact-controls">
                         <button className="control-btn play-btn" onClick={togglePlay}>
