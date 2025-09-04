@@ -678,7 +678,7 @@ body::before {
     }
 
     .email-section {
-        justify-content: center;
+        justify-content: flex-start;
         margin-left: 0;
     }
 }
@@ -702,13 +702,15 @@ body::before {
     }
 
     .email-section {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: flex-start;
         gap: 1rem;
+        margin-left: 0;
     }
 
     .email-actions {
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .compact-controls {
@@ -750,5 +752,17 @@ body::before {
 
     .about-section h2 {
         font-size: 2rem;
+    }
+
+    .email-section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        margin-left: 0;
+    }
+
+    .email-actions {
+        justify-content: flex-start;
     }
 }
