@@ -95,11 +95,18 @@ const Portfolio: React.FC = () => {
         window.location.href = 'mailto:doliandorian@gmail.com';
     };
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <div className="portfolio">
             <div className="left-section">
                 <div className="header">
-                    <h1 className="logo">Yullin</h1>
+                    <h1 className="logo" onClick={scrollToTop}>Yullin</h1>
                     <div className="email-section">
                         <span className="email">doliandorian@gmail.com</span>
                         <div className="email-actions">
@@ -189,7 +196,7 @@ const Portfolio: React.FC = () => {
                         </div>
                     </div>
 
-                   <audio ref={audioRef} src={`${process.env.PUBLIC_URL}/audio/latest-single.mp3`} />
+                    <audio ref={audioRef} src={`${process.env.PUBLIC_URL}/audio/latest-single.mp3`} />
 
                     <div className="compact-controls">
                         <button className="control-btn play-btn" onClick={togglePlay}>

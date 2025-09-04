@@ -104,6 +104,12 @@ body::before {
     background-clip: text;
     animation: logoGlow 4s ease-in-out infinite alternate;
     text-shadow: 0 0 30px rgba(117, 7, 12, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: translateY(-2px);
 }
 
 @keyframes logoGlow {
@@ -684,13 +690,40 @@ body::before {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding-top: 80px;
+    }
+
     .portfolio {
         padding: 1rem;
         gap: 2rem;
     }
 
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: linear-gradient(135deg, #f8f6f0 0%, #f2f0eb 50%, #ede9e0 100%);
+        backdrop-filter: none;
+        border: none;
+        padding: 1rem 1rem 0.5rem 1rem;
+        box-shadow: none;
+        gap: 0;
+
+        margin: 0;
+        outline: none;
+    }
+
     .logo {
-        font-size: 3.2rem;
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .email-section {
+        margin-left: 0;
+        gap: 1rem;
     }
 
     .slideshow-container {
@@ -719,8 +752,22 @@ body::before {
 }
 
 @media (max-width: 480px) {
+    .portfolio {
+        padding-top: 110px;
+    }
+
+    .header {
+        padding: 0.8rem 1rem 1.8rem 1rem;
+        background: linear-gradient(135deg, #f8f6f0 0%, #f2f0eb 50%, #ede9e0 100%);
+        backdrop-filter: none;
+        border: none;
+        box-shadow: none;
+        margin: 0;
+        outline: none;
+    }
+
     .logo {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
     }
 
     .slideshow-container {
