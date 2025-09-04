@@ -1,7 +1,7 @@
 {
   "name": "yullin-portfolio",
   "version": "0.1.0",
-  "homepage": "https://SamToTheEnd.github.io/YullinPortfolio",
+  "homepage": "https://yullin.me",
   "private": true,
   "dependencies": {
     "@types/node": "^16.18.0",
