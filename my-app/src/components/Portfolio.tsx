@@ -125,7 +125,7 @@ const Portfolio: React.FC = () => {
                     <h2>About</h2>
                     <p>
                         Hi! My name is Yullin, originally from Seoul, South Korea, based in London. I'm a songwriter and performer
-                        currently studying at BIMM. My music tends to be a kind of electro-pop with well crafted lyrics
+                        currently studying at BIMM. My music tends to be a kind of indie-pop with well crafted lyrics
                         with a focus on storytelling.
                     </p>
 
