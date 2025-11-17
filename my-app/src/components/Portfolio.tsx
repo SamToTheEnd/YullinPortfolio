@@ -108,7 +108,7 @@ const Portfolio: React.FC = () => {
                 <div className="header">
                     <h1 className="logo" onClick={scrollToTop}>Yullin</h1>
                     <div className="email-section">
-                        <span className="email">doliandorian@gmail.com</span>
+                        <span className="email">1231212@bimmstudents.com</span>
                         <div className="email-actions">
                             <button onClick={copyEmail} className="email-btn copy-btn" title="Copy email">
                                 <Copy size={16} />
